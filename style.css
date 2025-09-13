@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(128, 197, 214);
+}
+.todo{
+    min-height: 100vh;
+    font-family: sans-serif;
+    
+}
+.todo__box{
+    max-width: 527px;
+    border: 1px solid rgba(230, 233, 239, 1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 20px 30px;
+    margin: 0 auto;
+    margin-top:20vh;
+}
+.header{
+    margin-bottom: 10px;
+}
+.header h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(17, 24, 39, 1);
+}
+.header p{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(107, 114, 128, 1);
+}
+.todo__input{
+    margin-bottom: 20px;
+}
+.input{
+    width: 364.85px;
+    padding: 10px 15px 10px;
+    border: 1px solid rgb(204, 210, 224);
+    border-radius: 10px;
+    background: rgba(251, 253, 255, 1);
+    outline-color: blue;
+}
+
+.btn{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(37, 99, 235, 1);
+    border-radius: 10px;
+    background: rgba(37, 99, 235, 1);
+    padding: 10px 15px 10px;
+}
+.btn:hover{
+    background-color: rgb(67, 123, 245);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(67, 123, 245);;
+}
+
+.todo__list li{
+    max-width: 100%;
+    background-color: gray;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    border: 1px solid rgba(240, 242, 246, 1);
+    border-radius: 10px;
+    background: rgba(251, 253, 255, 1);
+    padding: 12px 10px 12px 50px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.todo__list li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+    top: 10px;
+    left: 15px;
+} 
+    
+.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+.checked::before{
+    background-color: blue;
+}
+.checked::after{
+    content:'\2714';
+    position: absolute;
+    top:11px;
+    left: 21px;
+    color: white;
+}
+span{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    top: 10px;
+    left: 410px;
+}
+span:hover{
+    color: black;
+}
